@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
-}
+ body {
+   font-family: "pp telegraf", sans-serif;
+   background-color: #02000c !important;
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+ @font-face {
+   font-family: 'pp telegraf';
+   src: url("./assets/font/PPTelegraf.ttf");
+ }
+ .circle-one {
+  animation-iteration-count: infinite;
+  animation-name: slide;
+  animation-duration: 10s;
+  top: 0;
+  left: 0;
+  position: relative;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ @keyframes slide {
+    0% {
+        transform: translateY(0);
+      }
+    
+      50% {
+        transform: translateY(100%);
+      }
+    
+      100% {
+        transform: translateY(0);
+      }
+ }
+ .circle-two {
+   animation-iteration-count: infinite;
+   animation-name: slide;
+   animation-duration: 10s;
+   top: 0;
+   right: 0;
+   position: relative;
+ }
+ @keyframes slide-three {
+    0% {
+        transform: translateX(0);
+      }
+    
+      50% {
+        transform: translateX(100%);
+      }
+    
+      100% {
+        transform: translateX(0);
+      }
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ .circle-three {
+   animation-iteration-count: infinite;
+   animation-name: slide-three;
+   animation-duration: 10s;
+   left: 0;
+   right: 0;
+   position: relative;
+ }
+ @keyframes slide-four {
+    0% {
+        transform: rotate(0deg);
+      }
+    
+      100% {
+        transform: rotate(360deg);
+      }
+ }
+ .circle-four {
+   animation-iteration-count: infinite;
+   animation-name: slide-four;
+   animation-duration: 10s;
+   top: 50%;
+   right: 0;
+   position: relative;
+ }
+ .container_1::after {
+   content: "";
+   position: absolute !important;
+   /* background-image: url("/assets/images/webp/img1.webp") !important; */
+   background-position: center;
+   background-size: cover;
+   border-radius: 50%;
+   background-color: white;
+   width: 64px;
+   height: 64px;
+   display: inline-block;
+   left: 91%;
+   z-index: 1;
+   top: 0;
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ .container_2::after {
+   content: "";
+   position: absolute !important;
+   /* background-image: url("/assets/images/webp/img1.webp") !important; */
+   background-position: center;
+   background-size: cover;
+   border-radius: 50%;
+   background-color: white;
+   width: 30px;
+   height: 30px;
+   display: inline-block;
+   right: 102%;
+   z-index: 1;
+   top: 0;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ @media (max-width:767px) {
+   .container_1::after {
+     left: -4%;
+   }
+
+   .container_2::after {
+     left: -4%;
+     ;
+   }
+ }
