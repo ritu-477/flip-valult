@@ -25,7 +25,7 @@ const Home = () => {
             <Volume/>
             <SupportedWallets />
             <Benefits />
-            <OurTeam/>
+            {/* <OurTeam/> */}
             <Faq/>
             <Ready/>
             <Footer />
