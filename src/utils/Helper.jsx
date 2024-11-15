@@ -8,11 +8,12 @@ import network from '../assets/images/webp/network-image.webp';
 import low from '../assets/images/webp/low-fess.webp';
 import peer from '../assets/images/webp/peer-image.webp';
 import digital from '../assets/images/webp/digital-image.webp';
+import rainbow from '../assets/images/webp/slider-image.webp'
 
 export const NAV_DATA_LINK = [
     { label: 'Trade', href: '#trade' },
-    { label: 'Markets', href: '#markets' },
-    { label: 'Insights', href: '#insights' },
+    { label: 'View Your Vault', href: '#' },
+    { label: 'Staking', href: '#insights' },
 ];
 
 export const DATA_LINK = [
@@ -207,4 +208,58 @@ export const ROADMAP_DATA = [
         ],
     },
 
+];
+export const SOCIAL_DATA = [
+    { icon: "facebook", href: "#" },
+    { icon: "twitter", href: "#" },
+    { icon: "youtube", href: "#" },
+    { icon: "linkedin", href: "#" },
+];
+export const CONTACT_DATA = [
+    { icon: "mail", label: "info@flipvault.com", href: "mailto:info@flipvault.com" },
+];
+export const TABS_DATA = [
+    {
+        title: "Team Members",
+        slides: [
+            { id: 1, image: rainbow, content: "Marc Ryan",  },
+            { id: 2, image: rainbow, content: "Marc Ryan"},
+            { id: 3, image: rainbow, content: "Marc Ryan"},
+        ],
+    },
+    {
+        title: "Advisory Board",
+        slides: [
+            { id: 2, image: rainbow, content: "Marc Ryan" },
+            { id: 3, image: rainbow, content: "Marc Ryan" },
+            { id: 1, image: rainbow, content: "Marc Ryan", },
+        ],
+    },
+];
+
+export const VOLUME_DATA = [
+    {
+        label: "Total trade volume",
+        targetValue: 32.45,
+        step: 0.1,
+        interval: 30,
+        suffix: "million",
+        decimalPlaces: 2,
+    },
+    {
+        label: "Number of users",
+        targetValue: 1697,
+        step: 1,
+        interval: 20,
+        suffix: "",
+        decimalPlaces: 0,
+    },
+    {
+        label: "ETH",
+        targetValue: 10,
+        step: 0.1,
+        interval: 50,
+        suffix: "ETH",
+        decimalPlaces: 1,
+    },
 ];

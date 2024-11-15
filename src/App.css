@@ -76,6 +76,12 @@
    right: 0;
    position: relative;
  }
+
+ .gradientText {
+  background: linear-gradient(92.91deg, #6494EE 0.95%, #085BF7 96.32%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
  .container_1::after {
    content: "";
    position: absolute !important;
@@ -108,7 +114,22 @@
    top: 0;
  }
 
- @media (max-width:767px) {
+ .swiper-pagination-bullet.swiper-pagination-bullet-active {
+   background: linear-gradient(92.91deg, #6494EE 0.95%, #085BF7 96.32%) !important;
+   width: 16px !important;
+   height: 16px !important;
+   border-radius: 50%;
+ }
+
+ .swiper-pagination-bullet {
+   background: linear-gradient(92.91deg, #6494EE 0.95%, #085BF7 96.32%) !important;
+   width: 16px !important;
+   height: 16px !important;
+   border-radius: 50%;
+   opacity: 0.5;
+ }
+
+ @media (max-width:767.99px) {
    .container_1::after {
      left: -4%;
    }

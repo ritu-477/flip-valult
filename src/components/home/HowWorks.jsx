@@ -3,10 +3,12 @@ import ConnectWallets from '../home/ConnectWallets'
 import Heading from '../../common/Heading'
 import CommonButton from '../../common/CommonButton'
 import { TIMELINE_DATA } from '../../utils/Helper'
-
+import worksEllipse from '../../assets/images/webp/how-works-ellipse.webp'
+    
 function HowWorks() {
     return (
-        <div className='lg:py-20 md:py-14 sm:py-10 py-6'>
+        <div className='lg:py-20 md:py-14 sm:py-10 py-6 relative'>
+             <img className='absolute right-0 top-[-100px] pointer-events-none -z-10 max-w-[750px] w-full' src={worksEllipse} alt="works-ellipse" />
             <div className='container'>
                 <div className='flex flex-wrap justify-between items-center pb-5 lg:pb-8'>
                     <div className='lg:w-1/3 w-full'>
@@ -25,11 +27,11 @@ function HowWorks() {
                         {TIMELINE_DATA.map((item, index) => (
                             <div
                                 key={index}
-                                className={`group relative ${index === TIMELINE_DATA.length - 1
+                                className={`relative ${index === TIMELINE_DATA.length - 1
                                     ? '' : 'border-dashed'} ${index === 3 ? 'hover:border-transparent'
-                                    : 'hover:border-dark-blue'} border bg-white opacity-20 duration-300 hover:opacity-100 max-w-[212px] w-full lg:ml-[85px] hover:bg-transparent`}>
-                                <div className="absolute size-[17px] top-[-8px] left-[-45px] duration-300 border border-white rounded-full group-hover:border-dark-blue group-hover:bg-dark-blue"></div>
-                                <div className="absolute size-[63px] top-[-31px] left-[-68px] duration-300 border border-white rounded-full group-hover:border-dark-blue"></div>
+                                    : 'border-dark-blue'} border max-w-[212px] w-full lg:ml-[85px] hover:bg-transparent`}>
+                                <div className="absolute size-[17px] top-[-8px] left-[-45px] rounded-full border-dark-blue bg-dark-blue"></div>
+                                <div className="absolute size-[63px] top-[-31px] left-[-68px] rounded-full border-dark-blue border"></div>
                             </div>
                         ))}
                     </div>

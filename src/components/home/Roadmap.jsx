@@ -1,10 +1,15 @@
 import React from 'react'
 import { ROADMAP_DATA } from '../../utils/Helper'
 import Heading from '../../common/Heading'
+import roadmapLeft from '../../assets/images/webp/roadmap-left-ellipse.webp'
+import roadmapRight from '../../assets/images/webp/roadmap-right-ellipse.webp'
+
 
 const Roadmap = () => {
     return (
-        <div className="lg:py-20 md:py-14 sm:py-10 py-6">
+        <div className="lg:py-20 md:py-14 sm:py-10 py-6 relative">
+            <img className='absolute max-w-[700px] pointer-events-none bottom-[-85px] -z-10 w-full left-0' src={roadmapLeft} alt="left-ellipse" />
+            <img className='absolute right-0 top-[160px] pointer-events-none max-w-[350px] -z-10' src={roadmapRight} alt="right-ellipse" />
             <div className="flex justify-center items-center">
                 <Heading className='text-center' text={"FlipVault Roadmap"} />
             </div>
@@ -26,7 +31,7 @@ const Roadmap = () => {
                                                         : index === 6
                                                             ? 'bg-timeline-seven'
                                                 : 'bg-timeline-eight md:ms-20'
-                                    } max-w-[492px] rounded-[20px] bg-cover bg-no-repeat bg-[100%-100%] p-6`}
+                                    } max-w-[492px] backdrop:blur-[40px] rounded-[20px] bg-cover bg-no-repeat bg-[100%-100%] p-6`}
                             >
                                 <p className={`container_${index % 2 === 0 ? "1 text-end" : "2 text-start"} font-normal text-white`}>
                                     {item.year}

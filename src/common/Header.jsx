@@ -32,12 +32,11 @@ const Header = () => {
     return (
         <div className="pt-[46px] flex items-center h-[51px]">
             <div className="container">
-                <div className="flex justify-between">
-                    <a href="">
-                        <img className="max-w-[114px] lg:hidden block" src={navLogo} alt="nav-logo" />
-                    </a>
-                    
-                    <div className="flex items-center gap-[59px]">
+                <div className="flex justify-between">                    
+                        <div className="flex items-center gap-[59px]">
+                                <a className='lg:hidden block' href="/">
+                                    <img className="max-w-[114px]" src={navLogo} alt="nav-logo" />
+                                </a> 
                         <a href="">
                             <img className="max-w-[114px] lg:block hidden" src={navLogo} alt="nav-logo" />
                         </a>
@@ -46,13 +45,13 @@ const Header = () => {
                                 {NAV_DATA_LINK.map((link, index) => (
                                     <a
                                         key={index}
-                                        className="font-normal text-base leading-custom-base text-white"
+                                        className="font-normal transition-all duration-300 hover:text-dark-blue text-base leading-custom-base text-white"
                                         href={link.href}
                                     >
                                         {link.label}
                                     </a>
                                 ))}
-                                <button className="bg-btn-bg border text-white border-ink-blue py-[10px] px-5 rounded-[34px]">
+                                <button className="bg-btn-bg border hover:border-white text-white border-ink-blue py-[10px] px-5 rounded-[34px]">
                                     Flip+
                                 </button>
                             </div>
@@ -81,7 +80,7 @@ const Header = () => {
                                 {NAV_DATA_LINK.map((link, index) => (
                                     <a
                                         key={index}
-                                        className="font-normal text-base leading-custom-base text-white"
+                                        className="font-normal transition-all duration-300 hover:text-dark-blue text-base leading-custom-base text-white"
                                         href={link.href}
                                     >
                                         {link.label}
@@ -95,16 +94,16 @@ const Header = () => {
                         {DATA_LINK.map((link, index) => (
                             <a
                                 key={index}
-                                className="font-normal text-base leading-custom-base text-white"
+                                className="font-normal text-base transition-all duration-300 hover:text-dark-blue leading-custom-base text-white"
                                 href={link.href}
                             >
                                 {link.label}
                             </a>
                         ))}
-                        <button className="py-[14.5px] px-[52.5px] text-white rounded-[10px] border border-white">
+                        <button className="py-[14.5px] px-[52.5px] transition-all duration-300 hover:bg-white hover:text-dark-blue text-white rounded-[10px] border border-white">
                             Sign Up
                         </button>
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>

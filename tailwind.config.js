@@ -30,6 +30,8 @@ module.exports = {
         'dark-blue': '#085bf7',
         'gray': '#8a8f97',
         'charcoal-black': '#0F0E18',
+        'off-white': '#FFFFFF1A',
+        'circle-border': '#3D3B45',
       },
 
       fontSize: {
@@ -51,6 +53,7 @@ module.exports = {
         'timeline-six': "url('./assets/images/webp/timeline-six-image.webp')",
         'timeline-seven': "url('./assets/images/webp/timeline-seven-image.webp')",
         'timeline-eight': "url('./assets/images/webp/timeline-eight-image.webp')",
+        'hero': "url('./assets/images/webp/hero-bg-image.webp')",
       },
 
       lineHeight: {

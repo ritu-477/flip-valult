@@ -2,10 +2,12 @@ import React from 'react'
 import Heading from '../../common/Heading'
 import {BENEFITS_DATA} from '../../utils/Helper'
 import Icon from '../../common/Icons'
+import benefitsEllipse from '../../assets/images/webp/benefits-left-ellipse.webp'
 
 const Benefits = () => {
   return (
-      <div className='lg:py-20 md:py-14 sm:py-10 py-6'>
+      <div className='lg:py-20 md:py-14 sm:py-10 py-6 relative'>
+          <img className='absolute left-0 max-w-[800px] pointer-events-none w-full' src={benefitsEllipse} alt="benefits-ellipse" />
           <div className='container'>
               <Heading className='text-center max-w-[758px] mx-auto' text={"Benefits of Using Our Revolutionary Trading Platformy"} />
               <p className='text-base leading-custom-xl text-white pt-3 font-normal text-center mx-auto max-w-[504px] opacity-60'>Lorem ipsum dolor sit amet consectetur. Eu bibendum in mollis vitae
