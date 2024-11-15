@@ -25,10 +25,10 @@ const Footer = () => {
                                     <p className='font-semibold text-lg text-white whitespace-nowrap pb-4'>{value.list}</p>
                                     {value.content.map((list, items) => (
                                         <ul key={items}>
-                                            <li className='pb-4'><a href='#' className='font-lato font-normal text-base text-white opacity-70 hover:opacity-[1] duration-700'>{list.listOne}</a></li>
-                                            <li className='pb-4'><a href='#' className='font-lato font-normal text-base text-white opacity-70 hover:opacity-[1] duration-700'>{list.listBtnTwo}</a></li>
-                                            <li className='pb-4'><a href='#' className='font-lato font-normal text-base text-white opacity-70 hover:opacity-[1] duration-700'>{list.listBtnThree}</a></li>
-                                            <li className='pb-4'><a href='#' className='font-normal text-base text-white opacity-70 hover:opacity-[1] duration-700'>{list.listBtnFour}</a></li>
+                                            <li className='pb-4'><a href='#home' className='font-lato font-normal text-base text-white opacity-70 hover:opacity-[1] duration-700'>{list.listOne}</a></li>
+                                            <li className='pb-4'><a href='#view' className='font-lato font-normal text-base text-white opacity-70 hover:opacity-[1] duration-700'>{list.listBtnTwo}</a></li>
+                                            <li className='pb-4'><a href='#connect' className='font-lato font-normal text-base text-white opacity-70 hover:opacity-[1] duration-700'>{list.listBtnThree}</a></li>
+                                            <li className='pb-4'><a href='#roadmap' className='font-normal text-base text-white opacity-70 hover:opacity-[1] duration-700'>{list.listBtnFour}</a></li>
                                             <li><a href='#' className='font-normal text-base text-white opacity-70 hover:opacity-[1] duration-700'>{list.listBtnFive}</a></li>
                                         </ul>
                                     ))}

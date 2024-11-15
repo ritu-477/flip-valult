@@ -7,7 +7,7 @@ import circleFour from '../../assets/images/webp/circle-four.webp'
 
 const Ready = () => {
     return (
-        <div className='lg:py-20 md:py-14 sm:py-10 py-6'>
+        <div className='lg:py-20 md:py-14 sm:py-10 py-6' id='staking'>
             <div className='container'>
                 <div className='max-w-[1160px] w-full lg:py-[90px] md:py-16 sm:py-12 py-5 px-5 rounded-[30px] bg-no-repeat bg-ink-black bg-[100%,100%] relative bg-center lg:bg-ready z-10'>
                     <div className='absolute top-0 left-0'>

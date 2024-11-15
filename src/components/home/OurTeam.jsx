@@ -2,8 +2,8 @@ import { useState } from "react";
 import Heading from "../../common/Heading";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Pagination } from 'swiper/modules';
-import "swiper/css/pagination"; 
+import { Pagination } from "swiper/modules";
+import "swiper/css/pagination";
 import { TABS_DATA } from "../../utils/Helper";
 
 const OurTeam = () => {
@@ -17,14 +17,14 @@ const OurTeam = () => {
                     text={"Our Team"}
                 />
                 <div className="max-w-4xl mx-auto">
-                    <div className="flex justify-center gap-3 mb-14">
+                    <div className="flex justify-center gap-3 mb-14 mt-[22px]">
                         {TABS_DATA.map((tab, index) => (
                             <button
                                 key={index}
-                                onClick={() => setActiveTab(index)} 
-                                className={`px-6 py-4 rounded-[40px] text-base border ${activeTab === index
-                                    ? "bg-white text-midnight-black border-white"
-                                    : "bg-midnight-black text-white border-gray-border"
+                                onClick={() => setActiveTab(index)}
+                                className={`sm:px-6 sm:py-4 py-2 px-3 rounded-[40px] text-base border ${activeTab === index
+                                        ? "bg-white text-midnight-black border-white"
+                                        : "bg-midnight-black text-white border-gray-border"
                                     }`}
                             >
                                 {tab.title}
@@ -32,34 +32,38 @@ const OurTeam = () => {
                         ))}
                     </div>
                     <Swiper
-                        key={activeTab}
-                        modules={[Pagination]} 
+                        modules={[Pagination]}
                         spaceBetween={30}
-                        slidesPerView={1} 
-                        pagination={{ clickable: true }} 
+                        slidesPerView={1}
+                        pagination={{ clickable: true }}
                         breakpoints={{
                             1024: {
-                                slidesPerView: 2, 
+                                slidesPerView: 3, 
                             },
                             768: {
-                                slidesPerView: 2,
+                                slidesPerView: 2, 
                             },
                             640: {
-                                slidesPerView: 1,
+                                slidesPerView: 1, 
                             },
                         }}
                         className="w-full"
                     >
-                        {TABS_DATA[activeTab].slides.map((slide) => (
+                        {TABS_DATA[activeTab]?.slides?.map((slide) => (
                             <SwiperSlide key={slide.id}>
-                                <div className="p-6 w-1/3">
-                                    <div className="rounded-[30px] p-[30px_30px_18.79px_30px] bg-light-black">
-                                        <img className="max-w-[312px] w-full pointer-events-none" src={slide.image} alt={slide.content} />
-                                        <h3 className="text-2xl text-center font-extrabold text-white">
+                                    <div className="rounded-[30px] max-w-[373px] w-full p-[30px_30px_18.79px_30px] bg-light-black">
+                                        <img
+                                            className="max-w-[312px] w-full pointer-events-none"
+                                            src={slide.image}
+                                            alt={slide.content}
+                                        />
+                                        <h3 className="text-2xl text-center font-extrabold pt-[14px] text-white">
                                             {slide.content}
                                         </h3>
+                                        <p className="text-base leading-custom-xl text-center font-extrabold opacity-60 text-white">
+                                            {slide.text}
+                                        </p>
                                     </div>
-                                </div>
                             </SwiperSlide>
                         ))}
                     </Swiper>

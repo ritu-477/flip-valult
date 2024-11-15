@@ -12,12 +12,12 @@ import rainbow from '../assets/images/webp/slider-image.webp'
 
 export const NAV_DATA_LINK = [
     { label: 'Trade', href: '#trade' },
-    { label: 'View Your Vault', href: '#' },
-    { label: 'Staking', href: '#insights' },
+    { label: 'View Your Vault', href: '#View' },
+    { label: 'Staking', href: '#Staking' },
 ];
 
 export const DATA_LINK = [
-    { label: 'Connect Wallets', href: '#connect-wallets' },
+    { label: 'Connect Wallets', href: '#connect' },
     { label: 'Log In', href: '#login' },
 ];
 
@@ -221,9 +221,9 @@ export const TABS_DATA = [
     {
         title: "Team Members",
         slides: [
-            { id: 1, image: rainbow, content: "Marc Ryan",  },
-            { id: 2, image: rainbow, content: "Marc Ryan"},
-            { id: 3, image: rainbow, content: "Marc Ryan"},
+            { id: 1, image: rainbow, content: "Marc Ryan", text:"Co-founder"},
+            { id: 2, image: rainbow, content: "Marc Ryan", text: "Co-founder" },
+            { id: 3, image: rainbow, content: "Marc Ryan", text: "Co-founder" },
         ],
     },
     {

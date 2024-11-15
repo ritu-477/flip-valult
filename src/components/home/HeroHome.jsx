@@ -6,7 +6,7 @@ import Header from '../../common/Header'
 
 const HeroHome = () => {
   return (
-      <div className='md:pb-[51px] bg-cover bg-no-repeat bg-center bg-hero'>
+      <div className='md:pb-[51px] bg-cover bg-no-repeat bg-center bg-hero' id='home'>
           <Header />
           <div className='lg:pt-[161px] md:pt-[120px] sm:pt-[80px] pt-12 pb-9 '>
               <div className='container'>

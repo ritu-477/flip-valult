@@ -7,7 +7,7 @@ import rightEllipse from '../../assets/images/webp/key-right-ellipse.webp'
 
 const KeyFeatures = () => {
   return (
-    <div className='lg:pb-[72px] md:pb-14 sm:pb-10 pb-6 relative'>
+    <div className='lg:pb-[72px] md:pb-14 sm:pb-10 pb-6 relative' id='view'>
       <img className='absolute left-0 bottom-[-230px] pointer-events-none max-w-[376px] z-[-1]' src={leftEllipse} alt="key-left-ellipse" />
       <img className='absolute right-0 top-[-20%] max-w-[376px] pointer-events-none z-[-1]' src={rightEllipse} alt="key-right-ellipse" />
       <div className='container'>

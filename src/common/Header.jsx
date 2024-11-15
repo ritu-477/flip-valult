@@ -43,7 +43,7 @@ const Header = () => {
                         <div className='lg:block hidden'>
                             <div className="flex gap-8 items-center">
                                 {NAV_DATA_LINK.map((link, index) => (
-                                    <a
+                                    <a onClick={toggleMenu}
                                         key={index}
                                         className="font-normal transition-all duration-300 hover:text-dark-blue text-base leading-custom-base text-white"
                                         href={link.href}
@@ -78,7 +78,7 @@ const Header = () => {
                         <div className='lg:hidden block'>
                             <div className='flex-col flex gap-6 items-center'>
                                 {NAV_DATA_LINK.map((link, index) => (
-                                    <a
+                                    <a onClick={toggleMenu}
                                         key={index}
                                         className="font-normal transition-all duration-300 hover:text-dark-blue text-base leading-custom-base text-white"
                                         href={link.href}
@@ -92,7 +92,7 @@ const Header = () => {
                             </div>
                         </div>
                         {DATA_LINK.map((link, index) => (
-                            <a
+                            <a onClick={toggleMenu}
                                 key={index}
                                 className="font-normal text-base transition-all duration-300 hover:text-dark-blue leading-custom-base text-white"
                                 href={link.href}

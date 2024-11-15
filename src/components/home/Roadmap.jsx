@@ -7,7 +7,7 @@ import roadmapRight from '../../assets/images/webp/roadmap-right-ellipse.webp'
 
 const Roadmap = () => {
     return (
-        <div className="lg:py-20 md:py-14 sm:py-10 py-6 relative">
+        <div className="lg:py-20 md:py-14 sm:py-10 py-6 relative" id='roadmap'>
             <img className='absolute lg:block hidden max-w-[700px] pointer-events-none bottom-[-85px] -z-10 w-full left-0' src={roadmapLeft} alt="left-ellipse" />
             <img className='absolute lg:block hidden right-0 top-[160px] pointer-events-none max-w-[350px] -z-10' src={roadmapRight} alt="right-ellipse" />
             <div className="flex justify-center items-center">
