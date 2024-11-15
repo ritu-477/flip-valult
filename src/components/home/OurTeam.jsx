@@ -16,7 +16,7 @@ const OurTeam = () => {
                     className="text-center max-w-[758px] mx-auto"
                     text={"Our Team"}
                 />
-                <div className="max-w-4xl mx-auto p-6">
+                <div className="max-w-4xl mx-auto">
                     <div className="flex justify-center gap-3 mb-14">
                         {TABS_DATA.map((tab, index) => (
                             <button

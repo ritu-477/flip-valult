@@ -6,29 +6,37 @@
  @font-face {
    font-family: 'pp telegraf';
    src: url("./assets/font/PPTelegraf.ttf");
+   font-weight: 400px !important;
  }
+
+ /* @font-face {
+   font-family: 'pp telegraf';
+   src: url("./assets/font/TelegrafUltraBold800.woff");
+ } */
+
  .circle-one {
-  animation-iteration-count: infinite;
-  animation-name: slide;
-  animation-duration: 10s;
-  top: 0;
-  left: 0;
-  position: relative;
+   animation-iteration-count: infinite;
+   animation-name: slide;
+   animation-duration: 10s;
+   top: 0;
+   left: 0;
+   position: relative;
  }
 
  @keyframes slide {
-    0% {
-        transform: translateY(0);
-      }
-    
-      50% {
-        transform: translateY(100%);
-      }
-    
-      100% {
-        transform: translateY(0);
-      }
+   0% {
+     transform: translateY(0);
+   }
+
+   50% {
+     transform: translateY(100%);
+   }
+
+   100% {
+     transform: translateY(0);
+   }
  }
+
  .circle-two {
    animation-iteration-count: infinite;
    animation-name: slide;
@@ -37,18 +45,19 @@
    right: 0;
    position: relative;
  }
+
  @keyframes slide-three {
-    0% {
-        transform: translateX(0);
-      }
-    
-      50% {
-        transform: translateX(100%);
-      }
-    
-      100% {
-        transform: translateX(0);
-      }
+   0% {
+     transform: translateX(0);
+   }
+
+   50% {
+     transform: translateX(100%);
+   }
+
+   100% {
+     transform: translateX(0);
+   }
  }
 
  .circle-three {
@@ -59,15 +68,17 @@
    right: 0;
    position: relative;
  }
+
  @keyframes slide-four {
-    0% {
-        transform: rotate(0deg);
-      }
-    
-      100% {
-        transform: rotate(360deg);
-      }
+   0% {
+     transform: rotate(0deg);
+   }
+
+   100% {
+     transform: rotate(360deg);
+   }
  }
+
  .circle-four {
    animation-iteration-count: infinite;
    animation-name: slide-four;
@@ -78,40 +89,37 @@
  }
 
  .gradientText {
-  background: linear-gradient(92.91deg, #6494EE 0.95%, #085BF7 96.32%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+   background: linear-gradient(92.91deg, #6494EE 0.95%, #085BF7 96.32%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ }
+
  .container_1::after {
    content: "";
    position: absolute !important;
-   /* background-image: url("/assets/images/webp/img1.webp") !important; */
+   background-image: url("././assets/images/webp/container-one.webp") !important;
    background-position: center;
    background-size: cover;
-   border-radius: 50%;
-   background-color: white;
    width: 64px;
    height: 64px;
    display: inline-block;
-   left: 91%;
+   left: 86%;
    z-index: 1;
-   top: 0;
+   top: 20px;
  }
 
  .container_2::after {
    content: "";
    position: absolute !important;
-   /* background-image: url("/assets/images/webp/img1.webp") !important; */
+   background-image: url("././assets/images/webp/container-two.webp") !important;
    background-position: center;
    background-size: cover;
    border-radius: 50%;
-   background-color: white;
-   width: 30px;
-   height: 30px;
-   display: inline-block;
-   right: 102%;
+   width: 64px;
+   height: 64px;
+   right: 97%;
    z-index: 1;
-   top: 0;
+   top: 20px;
  }
 
  .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -129,13 +137,46 @@
    opacity: 0.5;
  }
 
+ .blue-ellipse {
+   width: 450px;
+   height: 500px;
+   background: #031036;
+   opacity: 50%;
+   filter: blur(117px);
+   border-radius: 50px;
+ }
+
+ .yellow-ellipse {
+   width: 450px;
+   height: 500px;
+   background: yellowgreen;
+   opacity: 20%;
+   filter: blur(140px);
+   border-radius: 50px;
+ }
+
  @media (max-width:767.99px) {
    .container_1::after {
-     left: -4%;
+     left: 0;
+     width: 40px;
+     height: 40px;
    }
 
    .container_2::after {
-     left: -4%;
+     left: 0;
+     width: 40px;
+     height: 40px;
      ;
+   }
+ }
+
+ @media (min-width:992px) {
+   .container_1::after {
+      left: 89%;
+   }
+
+   .container_2::after {
+  
+      right: 100%;
    }
  }

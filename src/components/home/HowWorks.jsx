@@ -8,7 +8,7 @@ import worksEllipse from '../../assets/images/webp/how-works-ellipse.webp'
 function HowWorks() {
     return (
         <div className='lg:py-20 md:py-14 sm:py-10 py-6 relative'>
-             <img className='absolute right-0 top-[-100px] pointer-events-none -z-10 max-w-[750px] w-full' src={worksEllipse} alt="works-ellipse" />
+             <img className='absolute lg:block hidden right-0 top-[-100px] pointer-events-none -z-10 max-w-[750px] w-full' src={worksEllipse} alt="works-ellipse" />
             <div className='container'>
                 <div className='flex flex-wrap justify-between items-center pb-5 lg:pb-8'>
                     <div className='lg:w-1/3 w-full'>
@@ -28,7 +28,7 @@ function HowWorks() {
                             <div
                                 key={index}
                                 className={`relative ${index === TIMELINE_DATA.length - 1
-                                    ? '' : 'border-dashed'} ${index === 3 ? 'hover:border-transparent'
+                                    ? '' : 'border-dashed'} ${index === 3 ? 'border-transparent'
                                     : 'border-dark-blue'} border max-w-[212px] w-full lg:ml-[85px] hover:bg-transparent`}>
                                 <div className="absolute size-[17px] top-[-8px] left-[-45px] rounded-full border-dark-blue bg-dark-blue"></div>
                                 <div className="absolute size-[63px] top-[-31px] left-[-68px] rounded-full border-dark-blue border"></div>
@@ -51,11 +51,11 @@ function HowWorks() {
                         {TIMELINE_DATA.map((item, index) => (
                             <div
                                 key={index}
-                                className={`group relative ${index === TIMELINE_DATA.length - 1
-                                    ? '' : 'border-dashed'} ${index === 3 ? 'hover:border-transparent'
-                                        : 'hover:border-dark-blue'} border bg-white opacity-20 hover:opacity-100 w-[1px] ms-4 h-14 sm:h-20 mb-10 lg:ml-[85px] duration-300 hover:bg-transparent`}>
-                                <div className="absolute size-[10px] top-[-26px] left-[-3px] border border-white rounded-full group-hover:border-dark-blue duration-300 group-hover:bg-dark-blue"></div>
-                                <div className="absolute size-[40px] top-[-42px] left-[-18px] border border-white rounded-full group-hover:border-dark-blue duration-300"></div>
+                                className={`relative ${index === TIMELINE_DATA.length - 1
+                                    ? '' : 'border-dashed'} ${index === 3 ? 'border-transparent'
+                                        : ''} border-dark-blue border w-[1px] ms-4 h-14 sm:h-20 mb-10 lg:ml-[85px]`}>
+                                <div className="absolute size-[10px] top-[-26px] left-[-3px] border-dark-blue border bg-dark-blue"></div>
+                                <div className="absolute size-[40px] top-[-42px] left-[-18px] border-dark-blue border rounded-full"></div>
                             </div>
                         ))}
                     </div>

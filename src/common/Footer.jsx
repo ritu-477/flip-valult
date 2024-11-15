@@ -35,7 +35,7 @@ const Footer = () => {
                                 </div>
                            </div>
                         ))}
-                    <div className="lg:w-[20%] flex flex-col md:w-[33.33%] sm:w-[50%] w-full lg:mt-0 mt-6">
+                    <div className="lg:w-[20%] flex flex-col md:w-[33.33%] sm:w-[50%] w-full lg:mt-0 mt-6 max-sm:-mt-3">
                         <p className="font-semibold text-lg text-white text-start">Follow Us On</p>
                         <div className="flex gap-3 pt-4">
                             {SOCIAL_DATA.map((social, index) => (

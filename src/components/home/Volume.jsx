@@ -54,8 +54,8 @@ const Volume = () => {
         <div className="lg:py-20 md:py-14 sm:py-10 py-6">
             <div className="container">
                 <div className="max-w-[1141px] mx-auto">
-                    <div className="flex-row -mx-3 flex-wrap flex">
-                        <div className="lg:w-1/3 sm:w-1/2 w-full px-[10px]">
+                    <div className="flex-row -mx-3 flex-wrap flex justify-center">
+                        <div className="lg:w-1/3 md:w-1/2 w-full px-[10px]">
                             <div className="bg-navy-blue py-[30px] px-[27px] rounded-[30px]">
                                 <div className="flex gap-2 items-center">
                                     <p className="gradientText text-[64px] leading-[89.6px]">${tradeVolume}</p>
@@ -66,7 +66,7 @@ const Volume = () => {
                                 <p className="text-white pt-2 text-base leading-custom-xl opacity-60">Today</p>
                             </div>
                         </div>
-                        <div className="lg:w-1/3 sm:w-1/2 w-full px-[10px]">
+                        <div className="lg:w-1/3 md:w-1/2 w-full px-[10px] md:mt-0 mt-5">
                             <div className="bg-navy-blue py-[30px] px-[27px] rounded-[30px]">
                                 <div className="flex gap-2 items-center">
                                     <p className="gradientText text-[64px] leading-[89.6px]">{numUsers}</p>
@@ -76,7 +76,7 @@ const Volume = () => {
                                 <p className="text-white pt-2 text-base leading-custom-xl opacity-60">Online right now</p>
                             </div>
                         </div>
-                        <div className="lg:w-1/3 sm:w-1/2 w-full px-[10px]">
+                        <div className="lg:w-1/3 md:w-1/2 w-full px-[10px] lg:mt-0 mt-5">
                             <div className="bg-navy-blue py-[30px] px-[27px] rounded-[30px]">
                                 <div className="flex gap-2 items-center">
                                     <p className="gradientText text-[64px] leading-[89.6px]">{ethValue} ETH</p>

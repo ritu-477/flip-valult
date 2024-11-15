@@ -189,7 +189,6 @@ export const ROADMAP_DATA = [
     {
         year: "Advertise on large crypto/NFT sites",
         milestones: [
-            "Gearbox | OHM [Perp-Leverage] Vault",
             "Connect and manage multiple wallets like MetaMask and Phantom simultaneously.",
         ],
     },
