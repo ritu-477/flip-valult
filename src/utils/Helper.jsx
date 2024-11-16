@@ -128,6 +128,7 @@ export const KEY_DATA = [
         img: digital,
     },
 ];
+
 export const ACCORDION_ITEMS = [
     {
         title: 'What is an NFT?',
@@ -150,6 +151,7 @@ export const ACCORDION_ITEMS = [
         content: 'Lorem ipsum dolor sit amet consectetur. Nulla aliquet eu nunc donec sit. Ornare id sed euismod sodales a dictum. Ornare id sed euismod sodales a dictum',
     },
 ];
+
 export const ROADMAP_DATA = [
     {
         year: "Launch website platform",
@@ -208,32 +210,16 @@ export const ROADMAP_DATA = [
     },
 
 ];
+
 export const SOCIAL_DATA = [
-    { icon: "facebook", href: "#" },
-    { icon: "twitter", href: "#" },
-    { icon: "youtube", href: "#" },
-    { icon: "linkedin", href: "#" },
+    { icon: "facebook", href: "#https://www.facebook.com/" },
+    { icon: "twitter", href: "#https://x.com/i/flow/login" },
+    { icon: "youtube", href: "#https://www.youtube.com/" },
+    { icon: "linkedin", href: "#https://www.linkedin.com/" },
 ];
+
 export const CONTACT_DATA = [
     { icon: "mail", label: "info@flipvault.com", href: "mailto:info@flipvault.com" },
-];
-export const TABS_DATA = [
-    {
-        title: "Team Members",
-        slides: [
-            { id: 1, content: "Marc Ryan", text:"Co-founder"},
-            { id: 2, content: "Marc Ryan", text: "Co-founder" },
-            { id: 3, content: "Marc Ryan", text: "Co-founder" },
-        ],
-    },
-    {
-        title: "Advisory Board",
-        slides: [
-            { id: 2, content: "Marc Ryan" },
-            { id: 3, content: "Marc Ryan" },
-            { id: 1, content: "Marc Ryan", },
-        ],
-    },
 ];
 
 export const VOLUME_DATA = [

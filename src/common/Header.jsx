@@ -30,7 +30,7 @@ const Header = () => {
     }, [isMenuOpen])
     
     return (
-        <div className="pt-[70px] flex items-center h-[51px]">
+        <div className="lg:pt-[70px] md:-14 pt-12 flex items-center h-[51px]">
             <div className="container">
                 <div className="flex justify-between">                    
                         <div className="flex items-center gap-[59px]">

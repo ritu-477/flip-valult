@@ -40,7 +40,7 @@ const Footer = () => {
                         <p className="pp-telegraf-normal font-normal text-lg text-white text-start">Follow Us On</p>
                         <div className="flex gap-3 pt-4">
                             {SOCIAL_DATA.map((social, index) => (
-                                <a key={index} href={social.href} className="size-8 border flex items-center justify-center border-circle-border rounded-full"aria-label={social.icon}>
+                                <a key={index} href={social.href} target='blank' className="size-8 border flex items-center justify-center border-circle-border rounded-full"aria-label={social.icon}>
                                     <Icon iconName={social.icon} /></a>
                             ))}
                         </div>
