@@ -58,7 +58,7 @@ const Volume = () => {
                         <div className="lg:w-1/3 md:w-1/2 w-full px-[10px]">
                             <div className="bg-navy-blue sm:py-[30px] sm:px-[27px] py-5 px-4 rounded-[30px]">
                                 <div className="flex gap-2 items-center">
-                                    <p className="gradientText pp-telegraf-bold font-extrabold sm:text-5xl text-custom3xl leading-8 lg:text-custom5xl lg:leading-custom-8xl">${tradeVolume}</p>
+                                    <p className="gradientText pp-telegraf-bold font-extrabold sm:text-5xl text-custom3xl leading-8 xl:text-custom5xl xl:leading-custom-8xl">${tradeVolume}</p>
                                     <p className="sm:text-2xl text-base font-extrabold pp-telegraf-bold text-white leading-custom-6xl">million</p>
                                 </div>
                                 <div className="border-dashed border-dark-blue border w-full"></div>
@@ -69,7 +69,7 @@ const Volume = () => {
                         <div className="lg:w-1/3 md:w-1/2 w-full px-[10px] md:mt-0 mt-5">
                             <div className="bg-navy-blue sm:py-[30px] sm:px-[27px] py-5 px-4 rounded-[30px]">
                                 <div className="flex gap-2 items-center">
-                                    <p className="gradientText sm:text-5xl text-custom3xl pp-telegraf-bold font-extrabold leading-8 lg:text-custom5xl lg:leading-custom-8xl">{numUsers}</p>
+                                    <p className="gradientText sm:text-5xl text-custom3xl pp-telegraf-bold font-extrabold leading-8 xl:text-custom5xl xl:leading-custom-8xl">{numUsers}</p>
                                 </div>
                                 <div className="border-dashed border-dark-blue border w-full"></div>
                                 <p className="sm:text-2xl text-base pt-2 pp-telegraf-bold font-extrabold text-white">Number of users</p>
@@ -79,7 +79,7 @@ const Volume = () => {
                         <div className="lg:w-1/3 md:w-1/2 w-full px-[10px] lg:mt-0 mt-5">
                             <div className="bg-navy-blue sm:py-[30px] sm:px-[27px] py-5 px-4 rounded-[30px]">
                                 <div className="flex gap-2 items-center">
-                                    <p className="gradientText sm:text-5xl text-custom3xl pp-telegraf-bold font-extrabold leading-8 lg:text-custom5xl lg:leading-custom-8xl">{ethValue} ETH</p>
+                                    <p className="gradientText sm:text-5xl text-custom3xl pp-telegraf-bold font-extrabold leading-8 xl:text-custom5xl xl:leading-custom-8xl">{ethValue} ETH</p>
                                 </div>
                                 <div className="border-dashed border-dark-blue border"></div>
                                 <p className="sm:text-2xl text-base pt-2 font-extrabold pp-telegraf-bold text-white">Total trade volume</p>
