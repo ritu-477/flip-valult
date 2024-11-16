@@ -13,7 +13,7 @@ function HowWorks() {
                 <div className='flex flex-wrap justify-between items-center pb-5 lg:pb-8'>
                     <div className='lg:w-1/3 w-full'>
                         <Heading className='text-start' text={"How it works"} />
-                        <p className='text-base leading-custom-xl opacity-80 text-white'>There are many variations of passages of Lorem
+                        <p className='text-base pp-telegraf-normal leading-custom-xl opacity-80 text-white'>There are many variations of passages of Lorem
                             Ipsum availablebut</p>
                     </div>
                     <div className='mt-4 lg:mt-0'>
@@ -39,8 +39,8 @@ function HowWorks() {
                 <div className="flex lg:flex-row mt-16 lg:mt-20 lg:ml-8 lg:space-x-8">
                     {TIMELINE_DATA.map((step, index) => (
                         <div key={index} className="w-full lg:w-1/4">
-                            <p className="text-2xl font-extrabold text-gray">{step.title}</p>
-                            <p className="text-lg font-normal text-white opacity-60">{step.description}</p>
+                            <p className="text-2xl font-extrabold pp-telegraf-bold text-gray">{step.title}</p>
+                            <p className="text-lg font-normal pp-telegraf-normal text-white opacity-60">{step.description}</p>
                         </div>
                     ))}
                 </div>
@@ -62,8 +62,8 @@ function HowWorks() {
                         <div className='flex-col sm:gap-10 gap-5 flex -mt-10 ps-8'>
                             {TIMELINE_DATA.map((step, index) => (
                                 <div key={index} className="w-full pb-1 sm:pb-8">
-                                    <p className="text-lg font-extrabold text-gray">{step.title}</p>
-                                    <p className="text-base font-normal text-white opacity-60">{step.description}</p>
+                                    <p className="text-lg font-extrabold pp-telegraf-bold text-gray">{step.title}</p>
+                                    <p className="text-base font-normal pp-telegraf-normal text-white opacity-60">{step.description}</p>
                                 </div>
                             ))}
                    </div>

@@ -14,7 +14,7 @@ const Faq = () => {
         <div className="lg:pt-[65px] md:pt-14 sm:pt-10 pt-6 lg:pb-20 md:pb-14 sm:pb-10 pb-6">
             <div className="container mx-auto px-4">
                 <Heading className='text-center max-w-[758px] mx-auto' text={"Any Questions? Look Here"} />
-                <p className='text-base leading-custom-xl text-white pt-3 font-normal text-center mx-auto max-w-[504px] opacity-60'>There are many variations of passages of Lorem Ipsum available
+                <p className='text-base leading-custom-xl text-white pt-3 font-normal pp-telegraf-normal text-center mx-auto max-w-[504px] opacity-60'>There are many variations of passages of Lorem Ipsum available
                     but the majority have suffered alteration in some form.</p>
                 <div className="space-y-[10px] max-w-[964px] pt-[49px] mx-auto w-full">
                     {ACCORDION_ITEMS.map((item, index) => (

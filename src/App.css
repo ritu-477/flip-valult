@@ -1,18 +1,30 @@
  body {
-   font-family: "pp telegraf", sans-serif;
    background-color: #02000c !important;
  }
 
  @font-face {
    font-family: 'pp telegraf';
    src: url("./assets/font/PPTelegraf.ttf");
-   font-weight: 400px !important;
+   font-weight: 400;
  }
 
- /* @font-face {
+ @font-face {
    font-family: 'pp telegraf';
    src: url("./assets/font/TelegrafUltraBold800.woff");
- } */
+   font-weight: 800;
+ }
+
+ .pp-telegraf-normal {
+   font-family: 'pp telegraf';
+   src: url("./assets/font/PPTelegraf.ttf");
+   font-weight: 400;
+ }
+
+ .pp-telegraf-bold {
+  font-family: 'pp telegraf';
+    src: url("./assets/font/TelegrafUltraBold800.woff");
+    font-weight: 800;
+ }
 
  .circle-one {
    animation-iteration-count: infinite;
@@ -121,7 +133,7 @@
    z-index: 1;
    top: 20px;
  }
- 
+
  .swiper-pagination-bullet.swiper-pagination-bullet-active {
    background: linear-gradient(92.91deg, #6494EE 0.95%, #085BF7 96.32%) !important;
    width: 16px !important;
@@ -136,12 +148,11 @@
    height: 16px !important;
    border-radius: 50%;
    opacity: 0.5;
-    z-index: 10 !important;
+   z-index: 10 !important;
  }
 
- .swiper-horizontal>.swiper-pagination-bullets
- .swiper-pagination-bullets.swiper-pagination-horizontal {
-      bottom: 10px !important;
+ .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullets.swiper-pagination-horizontal {
+   bottom: 10px !important;
  }
 
  .blue-ellipse {
@@ -179,11 +190,11 @@
 
  @media (min-width:992px) {
    .container_1::after {
-      left: 89%;
+     left: 89%;
    }
 
    .container_2::after {
-  
-      right: 100%;
+
+     right: 100%;
    }
  }

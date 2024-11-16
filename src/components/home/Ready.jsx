@@ -22,8 +22,8 @@ const Ready = () => {
                     </div>
                     <div className='flex flex-col items-center'>
                         <Heading className='text-center relative z-10' text={"Ready to start?"} />
-                        <p className='font-normal text-lg leading-6 text-center text-white opacity-80 pt-2 mx-auto max-w-[682px]'>Got questions or feedback about our services? Interested in joining our team? Reach out to us anytime! Let’s chat and see how we can work.</p>
-                        <button className='hover:from-[#085BF7] hover:to-[#6494EE] bg-gradient-to-r from-[#6494EE] to-[#085BF7] duration-300 ease-in-out relative z-10 to-[#085BF7] text-white font-extrabold text-base rounded-[10px] sm:mt-6 mt-4 lg:mt-[30px] text-center sm:py-[14.5px] sm:px-[47px] py-3 px-8'>Join Now</button>
+                        <p className='font-normal pp-telegraf-normal text-lg leading-6 text-center text-white opacity-80 pt-2 mx-auto max-w-[682px]'>Got questions or feedback about our services? Interested in joining our team? Reach out to us anytime! Let’s chat and see how we can work.</p>
+                        <button className='hover:from-[#085BF7] hover:to-[#6494EE] bg-gradient-to-r from-[#6494EE] to-[#085BF7] duration-300 ease-in-out relative z-10 to-[#085BF7] text-white font-extrabold text-base rounded-[10px] sm:mt-6 mt-4 lg:mt-[30px] pp-telegraf-bold text-center sm:py-[14.5px] sm:px-[47px] py-3 px-8'>Join Now</button>
                     </div>
                 </div>
             </div>

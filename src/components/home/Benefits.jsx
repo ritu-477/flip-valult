@@ -20,8 +20,8 @@ const Benefits = () => {
                               className='sm:p-[27px_27px_40px] p-[20px_20px_24px] flex-col flex items-center rounded-[30px] bg-light-black hover:scale-95 transition duration-300'
                           >
                               <Icon iconName={benefits.process} />
-                              <p className='text-white text-2xl font-extrabold text-center sm:pt-10 pt-6 max-w-[294px] mx-auto'>{benefits.text}</p>
-                              <p className='text-white text-base opacity-60 font-extrabold text-center pt-2'>{benefits.para}</p>
+                              <p className='text-white text-2xl font-extrabold pp-telegraf-bold text-center sm:pt-10 pt-6 max-w-[294px] mx-auto'>{benefits.text}</p>
+                              <p className='text-white text-base opacity-60 font-normal text-center pp-telegraf-normal pt-2'>{benefits.para}</p>
                           </div>
                     </div>
                   ))}

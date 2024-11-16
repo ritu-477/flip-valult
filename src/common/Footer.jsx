@@ -6,6 +6,7 @@ import { SOCIAL_DATA } from '../utils/Helper'
 import { CONTACT_DATA } from '../utils/Helper'
 import ellipseOne from '.././assets/images/webp/footer-ellipse-one.webp'
 import ellipseTwo from '.././assets/images/webp/footer-ellipse-two.webp'
+import BackTop from '../components/home/BackTop'
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -17,26 +18,26 @@ const Footer = () => {
                 <div className='lg:flex-row flex flex-wrap justify-between'>
                     <div className='lg:w-1/4 w-full'>
                         <a href=""><img src={footerLogo} className='max-w-[114.57px]' alt="footer-logo" /></a>
-                        <p className='font-normal text-base text-primary-gray max-w-[299px] pt-5'>Trade NFTs, Cryptocurrencies, and Files Across Multiple Networks.</p>
+                        <p className='font-normal pp-telegraf-normal text-base text-primary-gray max-w-[299px] pt-5'>Trade NFTs, Cryptocurrencies, and Files Across Multiple Networks.</p>
                     </div>``
                         {FOOTER_DATA.map((value, i) => (
                             <div className='lg:w-[20%] md:w-[33.33%] sm:w-[50%] w-full flex lg:items-center flex-col lg:mt-0 mt-6'>
                                 <div key={i}>
-                                    <p className='font-semibold text-lg text-white whitespace-nowrap pb-4'>{value.list}</p>
+                                    <p className='pp-telegraf-normal font-normal text-lg text-white whitespace-nowrap pb-4'>{value.list}</p>
                                     {value.content.map((list, items) => (
                                         <ul key={items}>
-                                            <li className='pb-4'><a href='#home' className='font-lato font-normal text-base text-white opacity-70 hover:opacity-[1] duration-700'>{list.listOne}</a></li>
-                                            <li className='pb-4'><a href='#view' className='font-lato font-normal text-base text-white opacity-70 hover:opacity-[1] duration-700'>{list.listBtnTwo}</a></li>
-                                            <li className='pb-4'><a href='#connect' className='font-lato font-normal text-base text-white opacity-70 hover:opacity-[1] duration-700'>{list.listBtnThree}</a></li>
-                                            <li className='pb-4'><a href='#roadmap' className='font-normal text-base text-white opacity-70 hover:opacity-[1] duration-700'>{list.listBtnFour}</a></li>
-                                            <li><a href='#' className='font-normal text-base text-white opacity-70 hover:opacity-[1] duration-700'>{list.listBtnFive}</a></li>
+                                            <li className='pb-4'><a href='#home' className='font-normal pp-telegraf-normal text-base text-white opacity-70 hover:opacity-[1] duration-700'>{list.listOne}</a></li>
+                                            <li className='pb-4'><a href='#view' className='font-normal pp-telegraf-normal text-base text-white opacity-70 hover:opacity-[1] duration-700'>{list.listBtnTwo}</a></li>
+                                            <li className='pb-4'><a href='#connect' className='font-normal pp-telegraf-normal text-base text-white opacity-70 hover:opacity-[1] duration-700'>{list.listBtnThree}</a></li>
+                                            <li className='pb-4'><a href='#roadmap' className='font-normal pp-telegraf-normal text-base text-white opacity-70 hover:opacity-[1] duration-700'>{list.listBtnFour}</a></li>
+                                            <li><a href='#' className='font-normal text-base text-white pp-telegraf-normal opacity-70 hover:opacity-[1] duration-700'>{list.listBtnFive}</a></li>
                                         </ul>
                                     ))}
                                 </div>
                            </div>
                         ))}
                     <div className="lg:w-[20%] flex flex-col md:w-[33.33%] sm:w-[50%] w-full lg:mt-0 mt-6 max-sm:-mt-3">
-                        <p className="font-semibold text-lg text-white text-start">Follow Us On</p>
+                        <p className="pp-telegraf-normal font-normal text-lg text-white text-start">Follow Us On</p>
                         <div className="flex gap-3 pt-4">
                             {SOCIAL_DATA.map((social, index) => (
                                 <a key={index} href={social.href} className="size-8 border flex items-center justify-center border-circle-border rounded-full"aria-label={social.icon}>
@@ -49,7 +50,7 @@ const Footer = () => {
                                 {CONTACT_DATA.map((contact, index) => (
                                     <React.Fragment key={index}>
                                         <a target='blank' href="mailto:info@flipvault.com"><Icon iconName={contact.icon} /></a>
-                                        <a href={contact.href}className="gradientText">{contact.label}</a>
+                                        <a href={contact.href} className="gradientText pp-telegraf-normal text-base leading-5">{contact.label}</a>
                                     </React.Fragment>
                                 ))}
                             </div>
@@ -58,8 +59,9 @@ const Footer = () => {
                 </div>
             </div>
             <div className='md:pt-12 pt-8 pb-[22px]'>
-                <p className='text-primary-gray text-base font-normal text-center'>©{currentYear}FlipVault</p>
+                <p className='text-primary-gray text-base pp-telegraf-normal font-normal text-center'>©{currentYear}FlipVault</p>
             </div>
+            <BackTop />
         </div>
     )
 }

@@ -34,12 +34,12 @@ const Roadmap = () => {
                                                 : 'md:bg-timeline-eight lg:ms-20 md:ms-10'
                                     } max-w-[492px] backdrop:blur-[40px] max-md:bg-light-black rounded-[20px] bg-cover bg-no-repeat bg-center p-3 md:p-6`}
                             >
-                                <p className={`container_${index % 2 === 0 ? "1 md:text-end" : "2 text-start max-w-[424px]"} font-extrabold sm:text-xl text-base leading-6 text-white`}>
+                                <p className={`container_${index % 2 === 0 ? "1 md:text-end" : "2 text-start max-w-[424px]"} font-extrabold pp-telegraf-bold sm:text-xl text-base leading-6 text-white`}>
                                     {item.year}
                                 </p>
                                 {item.milestones.map((milestone, milestoneIndex) => (
                                     <div key={milestoneIndex} className="flex pt-4">
-                                        <p className={`container_${index % 2 === 0 ? "1 md:text-end" : "2 text-start max-w-[424px]"} text-white sm:text-base text-sm font-normal leading-6`}>
+                                        <p className={`container_${index % 2 === 0 ? "1 md:text-end" : "2 text-start max-w-[424px]"} text-white sm:text-base text-sm pp-telegraf-normal font-normal leading-6`}>
                                             {milestone}
                                         </p>
                                     </div>

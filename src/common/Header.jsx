@@ -30,7 +30,7 @@ const Header = () => {
     }, [isMenuOpen])
     
     return (
-        <div className="pt-[46px] flex items-center h-[51px]">
+        <div className="pt-[70px] flex items-center h-[51px]">
             <div className="container">
                 <div className="flex justify-between">                    
                         <div className="flex items-center gap-[59px]">
@@ -45,13 +45,13 @@ const Header = () => {
                                 {NAV_DATA_LINK.map((link, index) => (
                                     <a onClick={toggleMenu}
                                         key={index}
-                                        className="font-normal transition-all duration-300 hover:text-dark-blue text-base leading-custom-base text-white"
+                                        className="font-normal pp-telegraf-normal transition-all duration-300 hover:text-dark-blue text-base leading-custom-base text-white"
                                         href={link.href}
                                     >
                                         {link.label}
                                     </a>
                                 ))}
-                                <button className="bg-btn-bg border hover:border-white text-white border-ink-blue py-[10px] px-5 rounded-[34px]">
+                                <button className="bg-btn-bg border pp-telegraf-normal hover:border-white text-white border-ink-blue py-[10px] px-5 rounded-[34px]">
                                     Flip+
                                 </button>
                             </div>
@@ -80,13 +80,13 @@ const Header = () => {
                                 {NAV_DATA_LINK.map((link, index) => (
                                     <a onClick={toggleMenu}
                                         key={index}
-                                        className="font-normal transition-all duration-300 hover:text-dark-blue text-base leading-custom-base text-white"
+                                        className="font-normal pp-telegraf-normal transition-all duration-300 hover:text-dark-blue text-base leading-custom-base text-white"
                                         href={link.href}
                                     >
                                         {link.label}
                                     </a>
                                 ))}
-                                <button className="bg-btn-bg border text-white border-ink-blue py-[10px] px-5 rounded-[34px]">
+                                <button className="bg-btn-bg border pp-telegraf-normal text-white border-ink-blue py-[10px] px-5 rounded-[34px]">
                                     Flip+
                                 </button>
                             </div>
@@ -94,13 +94,13 @@ const Header = () => {
                         {DATA_LINK.map((link, index) => (
                             <a onClick={toggleMenu}
                                 key={index}
-                                className="font-normal text-base transition-all duration-300 hover:text-dark-blue leading-custom-base text-white"
+                                className="font-normal pp-telegraf-normal text-base transition-all duration-300 hover:text-dark-blue leading-custom-base text-white"
                                 href={link.href}
                             >
                                 {link.label}
                             </a>
                         ))}
-                        <button className="py-[14.5px] px-[52.5px] transition-all duration-300 hover:bg-white hover:text-dark-blue text-white rounded-[10px] border border-white">
+                        <button className="py-[14.5px] px-[52.5px] pp-telegraf-normal transition-all duration-300 hover:bg-white hover:text-dark-blue text-white rounded-[10px] border border-white">
                             Sign Up
                         </button>
                         </div>

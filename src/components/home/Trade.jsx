@@ -19,7 +19,7 @@ const Trade = () => {
                           {PARAGRAPHS_DATA.map((text, index) => (
                               <p
                                   key={index}
-                                  className={`text-lg leading-7 text-white opacity-60 lg:text-start text-center lg:max-w-[570px] ${index !== 0 ? 'sm:pt-5 pt-4' : ''}`}>
+                                  className={`text-lg leading-7 pp-telegraf-normal text-white opacity-60 lg:text-start text-center lg:max-w-[570px] ${index !== 0 ? 'sm:pt-5 pt-4' : ''}`}>
                                   {text}
                               </p>
                           ))}

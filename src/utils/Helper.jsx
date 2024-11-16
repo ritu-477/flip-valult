@@ -8,7 +8,7 @@ import network from '../assets/images/webp/network-image.webp';
 import low from '../assets/images/webp/low-fess.webp';
 import peer from '../assets/images/webp/peer-image.webp';
 import digital from '../assets/images/webp/digital-image.webp';
-import rainbow from '../assets/images/webp/slider-image.webp'
+// import rainbow from '../assets/images/webp/slider-image.webp'
 
 export const NAV_DATA_LINK = [
     { label: 'Trade', href: '#trade' },
@@ -221,17 +221,17 @@ export const TABS_DATA = [
     {
         title: "Team Members",
         slides: [
-            { id: 1, image: rainbow, content: "Marc Ryan", text:"Co-founder"},
-            { id: 2, image: rainbow, content: "Marc Ryan", text: "Co-founder" },
-            { id: 3, image: rainbow, content: "Marc Ryan", text: "Co-founder" },
+            { id: 1, content: "Marc Ryan", text:"Co-founder"},
+            { id: 2, content: "Marc Ryan", text: "Co-founder" },
+            { id: 3, content: "Marc Ryan", text: "Co-founder" },
         ],
     },
     {
         title: "Advisory Board",
         slides: [
-            { id: 2, image: rainbow, content: "Marc Ryan" },
-            { id: 3, image: rainbow, content: "Marc Ryan" },
-            { id: 1, image: rainbow, content: "Marc Ryan", },
+            { id: 2, content: "Marc Ryan" },
+            { id: 3, content: "Marc Ryan" },
+            { id: 1, content: "Marc Ryan", },
         ],
     },
 ];
