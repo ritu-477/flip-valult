@@ -15,7 +15,7 @@ const Footer = () => {
             <img className='absolute bottom-0 left-0 sm:block hidden' src={ellipseOne} alt="ellipse-one" />
             <img className='absolute bottom-0 right-0 sm:block hidden' src={ellipseTwo} alt="ellipse-one" />
             <div className='container'>
-                <div className='lg:flex-row flex flex-wrap justify-between'>
+                <div className='lg:flex-row flex flex-wrap justify-between relative z-10'>
                     <div className='lg:w-1/4 w-full'>
                         <a href=""><img src={footerLogo} className='max-w-[114.57px]' alt="footer-logo" /></a>
                         <p className='font-normal pp-telegraf-normal text-base text-primary-gray max-w-[299px] pt-5'>Trade NFTs, Cryptocurrencies, and Files Across Multiple Networks.</p>
@@ -58,7 +58,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='md:pt-12 pt-8 pb-[22px]'>
+            <div className='md:pt-12 pt-8 pb-[22px] relative z-10'>
                 <p className='text-primary-gray text-base pp-telegraf-normal font-normal text-center'>©{currentYear}FlipVault</p>
             </div>
             <BackTop />

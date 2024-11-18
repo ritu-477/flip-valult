@@ -31,7 +31,7 @@ const Header = () => {
     
     return (
         <div className="lg:pt-[70px] md:-14 pt-12 flex items-center h-[51px]">
-            <div className="container">
+            <div className="container h-[51px]">
                 <div className="flex justify-between">                    
                         <div className="flex items-center gap-[59px]">
                                 <a className='lg:hidden block' href="/">
@@ -45,7 +45,7 @@ const Header = () => {
                                 {NAV_DATA_LINK.map((link, index) => (
                                     <a onClick={toggleMenu}
                                         key={index}
-                                        className="font-normal pp-telegraf-normal transition-all duration-300 hover:text-dark-blue text-base leading-custom-base text-white"
+                                        className="font-normal pp-telegraf-normal relative after:absolute hover:after:bg-white hover:after:left-0 after:w-0 hover:after:w-full hover:after:h-[2px] after:left-0 hover:after:bottom-[-3px] after:ease-in-out after:duration-300 text-base leading-custom-base text-white"
                                         href={link.href}
                                     >
                                         {link.label}
@@ -74,13 +74,13 @@ const Header = () => {
                             </>
                         )}
                     </div>
-                    <div className={`menuList ${isMenuOpen ? 'max-lg:left-0' : 'max-lg:left-[-100%]'} z-10 gap-6 max-lg:w-full max-lg:fixed max-lg:justify-center max-lg:top-0 max-lg:bg-black max-lg:flex-col max-lg:transition-all duration-300 flex items-center max-lg:min-h-screen`}>
+                    <div className={`menuList ${isMenuOpen ? 'max-lg:left-0' : 'max-lg:left-[-100%]'} z-10 gap-8 max-lg:w-full max-lg:fixed max-lg:justify-center max-lg:top-0 max-lg:bg-black max-lg:flex-col max-lg:transition-all duration-300 flex items-center max-lg:min-h-screen`}>
                         <div className='lg:hidden block'>
                             <div className='flex-col flex gap-6 items-center'>
                                 {NAV_DATA_LINK.map((link, index) => (
                                     <a onClick={toggleMenu}
                                         key={index}
-                                        className="font-normal pp-telegraf-normal transition-all duration-300 hover:text-dark-blue text-base leading-custom-base text-white"
+                                        className="font-normal pp-telegraf-normal relative after:absolute hover:after:bg-white hover:after:left-0 after:w-0 hover:after:w-full hover:after:h-[2px] after:left-0 hover:after:bottom-[-3px] after:ease-in-out after:duration-300 text-base leading-custom-base text-white"
                                         href={link.href}
                                     >
                                         {link.label}
@@ -94,13 +94,13 @@ const Header = () => {
                         {DATA_LINK.map((link, index) => (
                             <a onClick={toggleMenu}
                                 key={index}
-                                className="font-normal pp-telegraf-normal text-base transition-all duration-300 hover:text-dark-blue leading-custom-base text-white"
+                                className="font-normal pp-telegraf-normal text-base relative after:absolute hover:after:bg-white hover:after:left-0 after:w-0 hover:after:w-full hover:after:h-[2px] after:left-0 hover:after:bottom-[-3px] after:ease-in-out after:duration-300 leading-custom-base text-white"
                                 href={link.href}
                             >
                                 {link.label}
                             </a>
                         ))}
-                        <button className="py-[14.5px] px-[52.5px] pp-telegraf-normal transition-all duration-300 hover:bg-white hover:text-dark-blue text-white rounded-[10px] border border-white">
+                        <button className="py-[14.5px] px-[52.5px] pp-telegraf-bold font-extrabold transition-all duration-300  hover:bg-white hover:text-dark-blue text-white rounded-[10px] border border-white">
                             Sign Up
                         </button>
                         </div>

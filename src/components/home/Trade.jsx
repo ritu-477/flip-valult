@@ -9,8 +9,8 @@ import tradeCenter from '../../assets/images/webp/trade-center-ellipse.webp'
 const Trade = () => {
   return (
       <div className='relative lg:pb-8' id='trade'>
-          <img className='lg:block hidden pointer-events-none absolute bottom-[-40%] left-0 max-w-[300px] w-full' src={tradeLeft} alt="trade-left-ellipse" />
-          <img className='lg:block hidden pointer-events-none absolute top-[-30%] left-[45%] lg:max-w-[500px] xl:max-w-[600px] w-full' src={tradeCenter} alt="trade-center-ellipse" />
+          <img className='lg:block hidden pointer-events-none absolute bottom-[-64%] left-0 max-w-[380px] w-full' src={tradeLeft} alt="trade-left-ellipse" />
+          <img className='lg:block hidden pointer-events-none absolute top-[-30%] left-[45%] lg:max-w-[550px] xl:max-w-[678px] w-full' src={tradeCenter} alt="trade-center-ellipse" />
           <div className='container'>
               <div className='lg:flex-row flex flex-col gap-[59px]'>
                   <div className='lg:w-[50%] w-full flex flex-col justify-center'>

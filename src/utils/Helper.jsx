@@ -8,12 +8,12 @@ import network from '../assets/images/webp/network-image.webp';
 import low from '../assets/images/webp/low-fess.webp';
 import peer from '../assets/images/webp/peer-image.webp';
 import digital from '../assets/images/webp/digital-image.webp';
-// import rainbow from '../assets/images/webp/slider-image.webp'
+import rainbow from '../assets/images/webp/slider-image.webp';
 
 export const NAV_DATA_LINK = [
     { label: 'Trade', href: '#trade' },
-    { label: 'View Your Vault', href: '#View' },
-    { label: 'Staking', href: '#Staking' },
+    { label: 'View Your Vault', href: '#view' },
+    { label: 'Staking', href: '#staking' },
 ];
 
 export const DATA_LINK = [
@@ -248,3 +248,18 @@ export const VOLUME_DATA = [
         decimalPlaces: 1,
     },
 ];
+
+export const TABS_DATA = {
+    tab1: [
+        { id: 1, name: "Marc Ryan", role: "Co-founder", img: rainbow },
+        { id: 2, name: "Marc Ryan", role: "Co-founder", img: rainbow },
+        { id: 3, name: "Marc Ryan", role: "Co-founder", img: rainbow },
+        { id: 4, name: "Marc Ryan", role: "Co-founder", img: rainbow },
+    ],
+    tab2: [
+        { id: 1, name: "Jane Smith", role: "Co-founder", img: rainbow },
+        { id: 2, name: "Jane Smith", role: "Co-founder", img: rainbow },
+        { id: 3, name: "Jane Smith", role: "Co-founder", img: rainbow },
+        { id: 4, name: "Jane Smith", role: "Co-founder", img: rainbow },
+    ],
+};

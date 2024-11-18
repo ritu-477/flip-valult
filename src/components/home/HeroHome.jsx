@@ -3,12 +3,14 @@ import CommonButton from '../../common/CommonButton'
 import Icon from '../../common/Icons'
 import Safety from './Safety'
 import Header from '../../common/Header'
+import heroEllipse from '../../assets/images/webp/hero-ellipse.webp'
 
 const HeroHome = () => {
   return (
       <div className='md:pb-[51px] bg-cover bg-no-repeat bg-center bg-hero' id='home'>
           <Header />
-          <div className='lg:pt-[161px] md:pt-[120px] sm:pt-[80px] pt-12 pb-9 '>
+          <div className='lg:pt-[180px] md:pt-[120px] sm:pt-[80px] pt-12 pb-9 relative'>
+              <img className='absolute top-5 lg:block hidden max-w-[600px] w-full left-12 -z-10' src={heroEllipse} alt="hero-ellipse" />
               <div className='container'>
                   <h1 className='text-white text-center pp-telegraf-bold max-w-[822px] mx-auto lg:text-6xl md:text-5xl sm:text-4xl text-3xl xl:text-custom7xl xl:leading-custom-9xl'>Revolutionize Your
                       Trading Experience</h1>

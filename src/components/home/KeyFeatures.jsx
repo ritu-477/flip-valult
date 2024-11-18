@@ -12,15 +12,14 @@ const KeyFeatures = () => {
       <img className='absolute right-0 top-[-20%] max-w-[376px] pointer-events-none z-[-1]' src={rightEllipse} alt="key-right-ellipse" />
       <div className='container'>
         <Heading className='text-center' text={"Key Features"} />
-        <p className='text-base leading-custom-xl text-white pt-3 font-normal pp-telegraf-normal text-center mx-auto max-w-[504px] opacity-60'>Lorem ipsum dolor sit amet consectetur. Eu bibendum in mollis vitae
-          lectus mauris sit integer. Ut ac.</p>
+        <p className='text-lg leading-custom-xl text-white pt-3 font-normal pp-telegraf-normal text-center mx-auto max-w-[570px] opacity-60'>FlipVault payment widgets and API cater to a wide range of Web3 clients: individuals,gaming platforms, exchange platforms</p>
         <div className='flex-row flex-wrap flex -mx-3 justify-center lg:mt-10 sm:mt-8 mt-2'>
           {FEATURES_DATA.map((features, idx) => (
             <div className='xl:w-[33.33%] sm:w-[50%] px-[10px] w-full mt-5'>
               <div
                 key={idx}
                 className='lg:p-[60px_33px] sm:p-[40px_24px] p-[32px_16px] flex-col flex items-center rounded-[20px] hover:bg-charcoal-black transition duration-300'>
-                <p className='text-white text-2xl font-extrabold pp-telegraf-bold text-center lg:max-w-[274px] mx-auto'>{features.text}</p>
+                <p className={`${idx === 0 ? 'max-w-[308px]' : idx === 1 ? '' : ''} text-white text-2xl font-extrabold pp-telegraf-bold text-center mx-auto`}>{features.text}</p>
                 <p className='text-white text-base opacity-60 pp-telegraf-normal text-center pt-4'>{features.para}</p>
                 <img src={features.img} className={`${idx === 0 ? 'max-w-[141px]' :idx === 1 ? 'max-w-[356px]' :'max-w-[160px]'} w-full pt-[38px]`}alt={features.name}/>
               </div>

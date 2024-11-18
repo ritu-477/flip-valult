@@ -3,6 +3,7 @@ import { ROADMAP_DATA } from '../../utils/Helper'
 import Heading from '../../common/Heading'
 import roadmapLeft from '../../assets/images/webp/roadmap-left-ellipse.webp'
 import roadmapRight from '../../assets/images/webp/roadmap-right-ellipse.webp'
+import timelineImg from '../../assets/images/webp/timeline-line.webp'
 
 
 const Roadmap = () => {
@@ -14,32 +15,33 @@ const Roadmap = () => {
                 <Heading className='text-center' text={"FlipVault Roadmap"} />
             </div>
             <div className="container">
-                <div className="mx-auto md:mt-24 mt-10 w-full relative after:absolute after:w-[1px] after:h-[100%] after:bg-dark-blue after:top-[20px] after:bottom-0 after:left-[47%] after:border after:border-dashed max-md:after:left-4 flex flex-col max-md:gap-10 md:gap-0 rounded-">
+                <div className="mx-auto md:mt-24 mt-10 relative">
+                    <img src={timelineImg} alt="timeline-image" className='h-full absolute left-0 md:right-0 md:mx-auto' />
                     {ROADMAP_DATA.map((item, index) => (
                         <div
                             key={index}
-                            className={`container_${index % 2 === 0 ? "1 lg:pr-28 md:pr-14" : "2"
-                                } ps-[55px] md:ps-0 md:w-[50%] w-full left-0 relative ${index % 2 === 0 ? "" : "md:left-[50%]"
+                            className={`container_${index % 2 === 0 ? "1 md:pr-14" : "2"
+                                } ps-[75px] md:ps-0 md:w-[50%] w-full left-0 relative ${index % 2 === 0 ? "" : "md:left-[50%]"
                                 }`}
                             
                         >
                             <div
-                                className={`${index === 0 ? 'md:bg-timeline-one' : index === 1 ? 'md:bg-timeline-two lg:ms-20 md:ms-10' : index === 2 ? 'md:bg-timeline-three' : index === 3 ? 'md:bg-timeline-four lg:ms-20 md:ms-10'
+                                className={`${index === 0 ? 'lg:bg-timeline-one xl:p-[23px_24px_23px_10px]' : index === 1 ? 'lg:bg-timeline-two xl:ms-28 md:ms-14 xl:p-6' : index === 2 ? 'lg:bg-timeline-three xl:p-[23px_24px_23px_10px]' : index === 3 ? 'lg:bg-timeline-four xl:ms-28 md:ms-14 md:p-6'
                                                 : index === 4
-                                                    ? 'md:bg-timeline-five'
+                                        ? 'lg:bg-timeline-five xl:p-[21px_21px_21px_12px]'
                                                     : index === 5
-                                            ? 'md:bg-timeline-six lg:ms-20 md:ms-10'
+                                            ? 'lg:bg-timeline-six xl:ms-28 md:ms-14 md:p-6'
                                                         : index === 6
-                                                            ? 'md:bg-timeline-seven'
-                                                : 'md:bg-timeline-eight lg:ms-20 md:ms-10'
-                                    } max-w-[492px] backdrop:blur-[40px] max-md:bg-light-black rounded-[20px] bg-cover bg-no-repeat bg-center p-3 md:p-6`}
+                                                ? 'lg:bg-timeline-seven xl:p-[23px_24px_23px_10px]'
+                                                : 'lg:bg-timeline-eight xl:ms-28 md:ms-14 md:p-6'
+                                    } max-w-[492px] backdrop:blur-[40px] max-lg:bg-light-black rounded-[20px] bg-cover bg-no-repeat bg-center p-3`}
                             >
-                                <p className={`container_${index % 2 === 0 ? "1 md:text-end" : "2 text-start max-w-[424px]"} font-extrabold pp-telegraf-bold sm:text-xl text-base leading-6 text-white`}>
+                                <p className={`container_${index % 2 === 0 ? "1 md:text-end" : "2 text-start max-w-[424px]"} font-extrabold pp-telegraf-bold lg:text-xl text-base leading-6 text-white`}>
                                     {item.year}
                                 </p>
                                 {item.milestones.map((milestone, milestoneIndex) => (
-                                    <div key={milestoneIndex} className="flex pt-4">
-                                        <p className={`container_${index % 2 === 0 ? "1 md:text-end" : "2 text-start max-w-[424px]"} text-white sm:text-base text-sm pp-telegraf-normal font-normal leading-6`}>
+                                    <div key={milestoneIndex} className="flex pt-3">
+                                        <p className={`container_${index % 2 === 0 ? "1 md:text-end" : "2 text-start max-w-[424px]"} text-white lg:text-base text-sm pp-telegraf-normal font-normal leading-6 opacity-60`}>
                                             {milestone}
                                         </p>
                                     </div>

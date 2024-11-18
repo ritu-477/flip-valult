@@ -54,6 +54,7 @@ module.exports = {
         'timeline-seven': "url('./assets/images/webp/timeline-seven-image.webp')",
         'timeline-eight': "url('./assets/images/webp/timeline-eight-image.webp')",
         'hero': "url('./assets/images/webp/hero-bg-image.webp')",
+        // 'timeline': "url('./assets/images/webp/timeline-line.webp')",
       },
 
       lineHeight: {
